@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #fff0f5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #ffd6e0;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+#about {
+  background-color: #ffd6e0;
+}
+
+#hobbies {
+  background-color: #d6eaff;
+  padding: 20px 0 0 0;
+}
+
+#cooked {
+  background-color: #fffacd;
+}
+
+#books {
+  background-color: #d5f5e3;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 30px;
+  text-align: center;
+}
+
+.about-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+
+.my-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffb3c6;
+}
+
+.about-text p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.cooked-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.food-img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.food-img:hover {
+  transform: scale(1.1);
+}
+
+.book-list {
+  list-style: none;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.goodreads-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #b5ead7;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  background-color: #ffd6e0;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 182, 193, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background-color: #fff0f5;
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid #ffb3c6;
+  box-shadow: 4px 4px 0px #ffb3c6;
+  overflow: hidden;
+}
+
+.modal-title {
+  background-color: #ffd6e0;
+  padding: 8px 15px;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 2px solid #ffb3c6;
+  text-align: left;
+}
+
+.modal-content {
+  padding: 20px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.modal-box button {
+  margin: 0 20px 15px 20px;
+  padding: 6px 20px;
+  background-color: #ffd6e0;
+  border: 2px solid #ffb3c6;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.hobbies-scene {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.hobbies-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: bottom;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.flowers-row {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.flower {
+  width: 150px;
+  cursor: pointer;
+}
+#about {
+    background-color:#ffd6e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+}
+.card {
+    border: 3px solid #ff8fab;
+    border-radius: 8px;
+    width: 500px;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+    box-shadow: 4px 4px 0px #ff8fab;
+}
+.card-titlebar {
+    background-color: #ffb3c6;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-dots {
+    display: flex;
+    gap: 5px;
+}
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot.red {background-color: #ff5f57;}
+.dot.yellow {background-color: #febc2e;}
+.dot.green {background-color: #28c840;}
+
+.card-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+.card-body {
+    background-color: #fff0f5;
+    padding: 20px;
+    display: flex;
+    gap:20px;
+    align-items:center;
+}
+.card-photo img {
+    width: 120px;
+    height:120px;
+    object-fit: cover;
+    border: 3px solid #ffb3c6;
+}
+.card-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.label {
+    font-weight: bold;
+    color: #ff8fab;
+    margin-right: 8px;
+}
+.card-loading {
+    background-color: #ffb3c6;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #333;
+}
+.card-ur1bar {
+    background-color: #fff0f5;
+    padding: 5px 10px;
+    border-bottom: 2px solid #ffb3c6;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+}
+.card-search {
+    background-color: #ff8fab;
+    color: white;
+    padding: 2px 8px;
+    font-size: 11px;
+    margin-left: auto;
+    font-weight: bold;
+}
+.photo-label {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: bold;
+    border: 1px solid #ffb3c6;
+}
+.card-extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ff8fab;
+    font-size: 16px;
+    gap: 8px;
+}
+.card-titlebar {
+    background-color: #ffb3c6;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

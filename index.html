@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <title>HA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+ <nav>
+      <span class="logo">HA</span>
+      <ul>
+        <li><a href="#about">Who Am I?</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#cooked">Projects</a></li>
+        <li><a href="#books">Books</a></li>
+      </ul>
+    </nav>
+  </body>
+  </html>
+<section id="about">
+  <div class="card">
+    <div class="card-titlebar">
+      <div class="card-dots">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <span class="card-title">HA</span>
+      <span class="card-search">LOOKING FOR ATTENTION!!</span>
+    </div>
+     <div class="card-urlbar">
+      <span class="card-url"> https://www.ha.com</span>
+    </div>
+    <div class="card-body">
+      <div class="card-photo">
+        <img src="photo.jpg" alt="my photo">
+        <p class="photo-label">HA/</p>
+      </div>
+      <div class="card-info">
+        <p><span class="label">NAME</span>  HA</p>
+        <p><span class="label">ROLE</span> Student</p>
+        <p><span class="label">BIO</span> abdce for now</p>
+        <p><span class="label">FUN FACT</span> leap baby </p>
+      </div>
+    <div class="card-extra">
+      <p>♡ ♡ ♡ ♡ ♡</p>
+        <p>✦ ✦ ✦ ✦ ✦</p>
+        <p>♡ ♡ ♡ ♡ ♡</p>
+    </div>
+    </div>
+    <div class="card-loading">
+    </div>
+  </div>
+    </section>
+
+    <div class="hobbies-scene">
+  <img src="bg.jpg" alt="background" class="hobbies-bg">
+  <div class="flowers-row">
+    <img src="flower1.jpg.png" class="flower" onclick="openModal('hobby1')">
+    <img src="flower2.jpg.png" class="flower" onclick="openModal('hobby2')">
+    <img src="flower3.jpg.png" class="flower" onclick="openModal('hobby3')">
+  </div>
+</div>
+    
+    </section>
+    <div class="modal" id="hobby1">
+      <div class="modal-box">
+        <div class="modal-title"> Hobby 1 🌸</div>
+        <div class="modal-content">
+          <p>READING</p>
+        </div>
+        <button onclick="closeModal('hobby1')">close ✕</button>
+        </div>
+      </div>
+
+      <div class="modal" id="hobby2">
+      <div class="modal-box">
+        <div class="modal-title"> Hobby 2 🌸</div>
+        <div class="modal-content">
+        <p> Skating</p>
+        </div>
+        <button onclick="closeModal('hobby2')">close ✕</button>
+        </div>
+      </div>
+
+      <div class="modal" id="hobby3">
+      <div class="modal-box">
+        <div class="modal-title"> Hobby 3 🌸</div>
+        <div class="modal-content">
+        <p> Writing</p>
+        </div>
+        <button onclick="closeModal('hobby3')">close ✕</button>
+        </div>
+      </div>
+
+    </div>
+
+
+    <section id="cooked">
+      <h2> What I Have Cooked</h2>
+      <p>click to see my projects</p>
+
+      <div class="cooked-box">
+        <img src="pizza.jpg.png" alt="pizza" class="food-img" onclick="openModal('modal1')">
+        <img src="donut.jpg.png" alt="donut" class="food-img" onclick="openModal('modal2')">
+        <img src="drink.jpg.png" alt="drink" class="food-img drink" onclick="openModal('modal3')">
+        </div>
+        
+      <div id="modal1" class="modal">
+        <div class="modal-box">
+          <h3>Robot Arm </h3>
+          <p>Built a functional robot arm from scratch!</p>
+        <button onclick="closeModal('modal1')">close X</button>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-box">
+          <h3>3D Circuit</h3>
+          <p>Designed and built a 3D circuit from scratch!</p>
+        <button onclick="closeModal('modal2')">close X</button>
+        </div>
+      </div>
+
+      <div id="modal3" class="modal">
+        <div class="modal-box">
+          <h3>Anti-Gravity Runner</h3>
+          <p>Made a anti-gravity platform runner on Godot for DayDream!</p>
+        <button onclick="closeModal('modal3')">close X</button>
+        </div>
+      </div>
+     
+    </div>
+    </section>
+
+    <section id="books">
+      <h2>Books I've Read</h2>
+      <p>& YOU should too!</p>
+      <ul class="book-list">
+        <li>inheritence games</li>
+        <li>the silent patient</li>
+        <li>divergent</li>
+        <li>the paris apartment</li>
+        <li>the teacher</li>
+      </ul>
+      <a href="YOUR GOODREADS LINK" class="goodreads-btn">My Goodreads 🌿</a>
+    </section>
+    <footer>
+      <p>Contact ME</p>
+      <div class="socials">
+<a href="https://instagram.com/haniah.ahsan">Instagram</a>
+<a href="#">Facebook</a>
+<a href="https://www.linkedin.com/in/haniah-a-12a1252b3/">LinkedIn</a>
+<a href="#">Github</a>
+      </div>
+    </footer>
+    <script>
+      function openModal(id) {
+        document.getElementById(id).style.display='flex';
+      }
+      function closeModal(id) {
+        document.getElementById(id).style.display = 'none';
+      }
+    </script>
+
+  </body>
+  </html>
+
