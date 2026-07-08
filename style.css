@@ -94,7 +94,6 @@ footer {
   height: 200px;
   object-fit: contain;
   cursor: pointer;
-  transition: transform 0.2s;
 }
 
 .food-img:hover {
@@ -392,4 +391,68 @@ footer {
 .flower {
   animation: sway 3s ease-in-out infinite;
   transform-origin: bottom center;
+}
+@keyframes foodspin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes drinksway {
+  0% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  100% { transform: rotate(-5deg); }
+}
+
+.spin {
+  animation: foodspin 8s linear infinite;
+}
+
+.sway {
+  animation: drinksway 5s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+.drink {
+  width: 130px;
+  height: 230px;
+  object-fit: contain;
+  position: relative;
+  top: -30px;
+}
+.gallery-wall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.painting {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  
+}
+.gallery-left {
+  position:absolute;
+  left: 0;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+.gallery-right {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+.painting {
+  width: 120px;
+  height: 140px;
+  object-fit: contain;
+  
 }
