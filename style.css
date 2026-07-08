@@ -343,11 +343,11 @@ footer {
   z-index: 1;
 }
 .top-shelf {
-  top: 150px;
-  left: 300px;
+  top: 55px;
+  left: 500px;
 }
 .bottom-shelf {
-  top: 350px;
+  top: 275px;
   left: 400px;
   align-items: flex-end;
 }
@@ -372,4 +372,24 @@ footer {
   width: 80px;
   height: auto;
   cursor: pointer;
+}
+.top-shelf .upright {
+  height: 120px;
+  width: auto;
+}
+.top-shelf .flat {
+  width: 95px;
+  height: auto;
+}
+.cactus-gap {
+  width: 170px;
+}
+@keyframes sway {
+  0% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  100% {transform: rotate(-5deg);}
+}
+.flower {
+  animation: sway 3s ease-in-out infinite;
+  transform-origin: bottom center;
 }
