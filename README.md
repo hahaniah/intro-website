@@ -1,5 +1,11 @@
 # intro-website
-Website that tells you all about me!
+
+Site Link
+
+https://hahaniah.github.io/intro-website/
+
+
+It is a website that tells you all about me! A very simple webpage thats easy to open and view!
 
 What and How?
 
